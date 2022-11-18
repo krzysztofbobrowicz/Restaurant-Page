@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: grobek-heavy;
+  src: url(./FontsFree-Net-Grobek-Heavy.ttf);
+}
+
+body {
+  font-family: grobek-heavy;
+}
+
+:root {
+  --matte-black: #28282b;
+  --salmon: #ac2111be;
+}
+
+div#content {
+  height: 100vh;
+}
+
+#navbar {
+  background-color: var(--salmon);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  height: 15vh;
+}
+
+#navbar .link {
+  text-decoration: none;
+}
+
+#navbar .link:hover {
+  color: var(--matte-black);
+}
+
+#links {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.link {
+  padding: 0 0.5rem;
+}
+
+h2#restaurant-title {
+  margin-left: 4rem;
+}
+
+#navbar .link,
+h2#restaurant-title,
+#home {
+  color: #fff;
+}
+
+#image-dough {
+  width: 100px;
+}
+
+#home {
+  background-color: #28282b;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#introduction {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#image-dough {
+  width: 400px;
+  height: 600px;
+}
