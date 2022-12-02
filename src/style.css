@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'grobek-heavy';
+  src: url(./FontsFree-Net-Grobek-Heavy.ttf) format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'grobek-heavy';
+}
+
+:root {
+  --matte-black: #28282b;
+  --salmon: #ac2111be;
+}
+
+div#content {
+  height: 100vh;
+}
+
+#navbar {
+  background-color: var(--salmon);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  height: 15vh;
+}
+
+#navbar .link {
+  text-decoration: none;
+}
+
+#navbar .link:hover {
+  color: var(--matte-black);
+}
+
+#links {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.link {
+  padding: 0 0.5rem;
+}
+
+h2#restaurant-title {
+  margin-left: 4rem;
+}
+
+#navbar .link,
+h2#restaurant-title,
+#home,
+#contact {
+  color: #fff;
+}
+
+#image-dough {
+  width: 100px;
+}
+
+#home {
+  background-color: #28282b;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contact {
+  min-height: 85vh;
+  background-color: #28282b;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-box {
+  color: #28282b;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  width: 60%;
+  padding: calc(2rem + 2vw);
+  /* height: 200px; */
+  display: flex;
+  gap: 50px;
+  font-size: 1.8rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#menu-introduction {
+  background-color: #964c9981;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.pizza {
+  text-align: center;
+  flex: 50%;
+}
+
+.pizza-img {
+  width: 350px;
+}
+
+.pizza-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: rem;
+  padding-top: 4rem;
+}
+
+#introduction {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#menu-introduction {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#image-dough {
+  width: 400px;
+  height: 600px;
+}
