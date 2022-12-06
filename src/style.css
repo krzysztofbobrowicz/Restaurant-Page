@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'grobek-heavy';
-  src: url(./FontsFree-Net-Grobek-Heavy.ttf) format('opentype');
+  src: url(../dist/FontsFree-Net-Grobek-Heavy.ttf) format('opentype');
 }
 
 * {
@@ -17,10 +17,6 @@ body {
   --salmon: #ac2111be;
 }
 
-div#content {
-  height: 100vh;
-}
-
 #navbar {
   background-color: var(--salmon);
   display: flex;
@@ -34,8 +30,12 @@ div#content {
   text-decoration: none;
 }
 
-#navbar .link:hover {
-  color: var(--matte-black);
+ul {
+  list-style-type: none;
+}
+
+#links li {
+  cursor: pointer;
 }
 
 #links {
@@ -68,7 +68,7 @@ h2#restaurant-title,
 
 #home {
   background-color: #28282b;
-  min-height: 85vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
